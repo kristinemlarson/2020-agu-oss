@@ -31,7 +31,7 @@ def open_and_clean(url):
     # CLEANUP: Drop the commas from the column names & Add a day column
     temp_df.columns = [acol.replace(',', '') for acol in all_cols]
     temp_df = temp_df.assign(Day=1)
-
+x
     # Finally create a date time column
     temp_df["date"] = pd.to_datetime(temp_df[['Year', 'Month', 'Day']])
 
